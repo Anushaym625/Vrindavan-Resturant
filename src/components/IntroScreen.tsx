@@ -43,6 +43,7 @@ export default function IntroScreen() {
       setIsSwiped(true);
       setTimeout(() => {
         setIsVisible(false);
+        window.scrollTo({ top: 0, behavior: 'instant' });
       }, 1500); // Wait for transition to finish
     }
   };
@@ -68,11 +69,11 @@ export default function IntroScreen() {
             {/* Background Image */}
             <div className="absolute inset-0 w-full h-full">
               <Image
-                src="/images/intro_bg.jpg"
+                src="/images/intro_bg.png"
                 alt="Intro Background"
                 fill
                 priority
-                className="object-cover object-center pointer-events-none"
+                className="object-cover md:object-contain object-center pointer-events-none"
                 onError={(e) => {
                   // Fallback in case user hasn't uploaded image yet
                   e.currentTarget.style.display = 'none';
@@ -86,7 +87,7 @@ export default function IntroScreen() {
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
-              className="absolute top-10 left-1/2 -translate-x-1/2 w-48 h-48 pointer-events-none z-20"
+              className="absolute top-6 md:top-10 left-1/2 -translate-x-1/2 w-32 h-32 md:w-48 md:h-48 pointer-events-none z-20"
             >
               <Image
                 src="/images/vrindavan logo.png"
