@@ -1,7 +1,7 @@
 "use client";
 
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import { FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 export default function ContactFooter() {
@@ -43,7 +43,7 @@ export default function ContactFooter() {
                 <Phone className="text-[#D4AF37] mt-1 flex-shrink-0" />
                 <div>
                   <h5 className="text-white font-semibold mb-1">Reservations</h5>
-                  <p className="text-gray-400 text-sm">+91 7813041177<br/>+91 7795846699</p>
+                  <p className="text-gray-400 text-sm">+91 7795846699</p>
                 </div>
               </div>
             </div>
@@ -119,11 +119,11 @@ export default function ContactFooter() {
             <a href="https://www.instagram.com/vrindavan.resto.cafe?igsh=ZHV2a2EybTR3dW94" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-[#D4AF37]/30 flex items-center justify-center text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-colors">
               <FaInstagram size={18} />
             </a>
-            <a href="#" className="w-10 h-10 rounded-full border border-[#D4AF37]/30 flex items-center justify-center text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-colors">
-              <FaFacebook size={18} />
+            <a href="https://wa.me/917795846699" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-[#D4AF37]/30 flex items-center justify-center text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-colors">
+              <FaWhatsapp size={18} />
             </a>
-            <a href="#" className="w-10 h-10 rounded-full border border-[#D4AF37]/30 flex items-center justify-center text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-colors">
-              <FaTwitter size={18} />
+            <a href="mailto:info@vrindavanresto.com" className="w-10 h-10 rounded-full border border-[#D4AF37]/30 flex items-center justify-center text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-colors">
+              <FaEnvelope size={18} />
             </a>
           </div>
         </div>
